@@ -1,0 +1,15 @@
+project: default
+source:
+  repoURL: >-
+    https://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@github.com/rdurgade/argocd-config.git
+  path: dev/applications/app1
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: dev-ns
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  syncOptions:
+    - CreateNamespace=true
