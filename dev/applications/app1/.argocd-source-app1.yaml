@@ -1,1 +1,3 @@
-kustomize:\n  images:\n  - 10.0.0.19:5000/go-rest-project-template:v0.0.1-e5f9765-20220926202222
+kustomize:
+  images:
+  - 10.0.0.19:5000/go-rest-project-template:v0.0.1-c85486f-20220926202421
