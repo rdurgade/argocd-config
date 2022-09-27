@@ -11,7 +11,7 @@ spec:
   source:
     path: dev/applications/app1
     repoURL: >-
-      https://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@github.com/rdurgade/argocd-config.git
+      https://github.com/rdurgade/argocd-config.git
     targetRevision: HEAD
   project: default
   syncPolicy:
