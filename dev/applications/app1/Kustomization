@@ -4,4 +4,4 @@ resources:
 - ./base
 images:
 - name: 10.0.0.19:5000/demo
-  newTag: v0.0.1-45fd3f1-20220927152909
+  newTag: v0.0.1-0909db3-20220927155904
