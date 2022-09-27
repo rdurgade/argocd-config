@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - ./base
 images:
-- name: 10.0.0.19:5000/go-rest-project-template
-  newTag: v0.0.1-f4be5f6-20220927023649
+- name: 10.0.0.19:5000/demo
+  newTag: v0.0.1-45fd3f1-20220927152909
