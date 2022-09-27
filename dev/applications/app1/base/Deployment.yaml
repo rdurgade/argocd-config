@@ -15,7 +15,7 @@ spec:
         app: app1
     spec:
       containers:
-      - image: 10.0.0.19:5000/go-rest-project-template:v0.0.1-c85486f-20220926202421
+      - image: 10.0.0.19:5000/go-rest-project-template:v0.0.1-14675a6-20220926124956
         name: app1
         ports:
         - containerPort: 8080
