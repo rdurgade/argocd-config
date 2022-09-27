@@ -4,4 +4,4 @@ resources:
 - ./base
 images:
 - name: 10.0.0.19:5000/go-rest-project-template
-  newTag: v0.0.1-c238bf5-20220926233716
+  newTag: v0.0.1-518f17d-20220927002817
