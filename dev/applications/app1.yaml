@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app1
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: dev-ns
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: dev/applications/app1
+    repoURL: >-
+      https://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@github.com/rdurgade/argocd-config.git
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Validate=false
+      - CreateNamespace=true
+      - Replace=true
+    retry:
+      limit: 2
+      backoff:
+        duration: 5s
+        maxDuration: 3m0s
+        factor: 2
