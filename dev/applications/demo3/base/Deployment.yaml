@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo3
+  namespace: dev-ns
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: demo3
+  template:
+    metadata:
+      labels:
+        app: demo3
+    spec:
+      containers:
+      - image: 10.0.0.19:5000/demo3:v0.0.1-3b6f140-20220927182011
+        name: demo3
+        ports:
+        - containerPort: 8080
