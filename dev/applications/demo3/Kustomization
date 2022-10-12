@@ -1,7 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- ./base
-images:
-- name: 10.0.0.19:5000/demo3
-  newTag: v0.0.1-006bf1a-20221011233654
